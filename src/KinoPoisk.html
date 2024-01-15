@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+  @include('partials/head.html')
+
+  <body class="start-page">
+    <div class="container">
+      <div class="film-search">
+        <div class="film-search__inner">
+          <div class="film-search__title title">Поиск</div>
+
+          <form class="film-search__menu menu-search">
+            <div class="menu-search__inner">
+              <ul class="menu-search__items">
+
+                <li class="menu-search__item">
+                  <label for="search-input" class="menu-search__label">Название</label>
+                  <input type="text" id="search-input" placeholder="Название" class="menu-search__input">
+                </li>
+
+                <li class="menu-search__item">
+                  <label class="menu-search__label" for="search-select">Жанр</label>
+
+                  <select class="menu-search__select" name="pets">
+                    <option value="">Жанр</option>
+                    <option value="комедия">Комедия</option>
+                    <option value="приключения">Приключения</option>
+                    <option value="фэнтези">Фэнтези</option>
+                    <option value="семейный">Cемейный</option>
+                    <option value="мультфильм">Мультфильм</option>
+                    <option value="мелодрама">Мелодрама</option>
+                  </select>
+                </li>
+
+                <button class="menu-search__button btn">Поиск</button>
+              </ul>
+            </div>
+          </form>
+
+          <div class="film-search__content">
+            <div class="film-search__title title">Фильмы</div>
+
+            <div class="film-search__block cards-film">
+              <ul class="cards-film__items"></ul>
+              <div class="modal"></div>
+            </div>
+
+            <div class="pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
+
